@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="tests.SeccionesTest" duration-ms="32752" started-at="2020-02-02T02:33:12 UYT" finished-at="2020-02-02T02:33:45 UYT">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="32752" started-at="2020-02-02T02:33:12 UYT" finished-at="2020-02-02T02:33:45 UYT">
+      <class name="tests.SeccionesTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.SeccionesTest@5bcab519]" name="setUp" is-config="true" duration-ms="17776" started-at="2020-02-02T02:33:12 UYT" finished-at="2020-02-02T02:33:30 UYT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="women()[pri:0, instance:tests.SeccionesTest@5bcab519]" name="women" duration-ms="14275" started-at="2020-02-02T02:33:30 UYT" finished-at="2020-02-02T02:33:44 UYT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- women -->
+        <test-method status="PASS" signature="close()[pri:0, instance:tests.SeccionesTest@5bcab519]" name="close" is-config="true" duration-ms="659" started-at="2020-02-02T02:33:44 UYT" finished-at="2020-02-02T02:33:45 UYT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- tests.SeccionesTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- tests.SeccionesTest -->
+</testng-results>
