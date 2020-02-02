@@ -18,7 +18,7 @@ public class Login extends PagesCommon {
 		email = By.id("email");
 		password = By.id("passwd");
 		signinButton = By.id("SubmitLogin");
-		signinError = By.xpath("//*[@id=\"center_column\"]//li");
+		signinError = By.xpath("//*[@id=\"center_column\"]/*[@class=\"alert alert-danger\"]/ol/li");
 	}
 	
 	public String login(String user, String pass) {

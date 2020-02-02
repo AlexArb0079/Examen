@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Product extends PagesCommon {
@@ -19,11 +20,11 @@ public class Product extends PagesCommon {
 	}
 	
 	public String getItemName() {
-		return driver.findElement(itemName).getText();
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(itemName)).getText();
 	}
 	
 	public String getCurrentColour() {
-		return driver.findElement(itemColours).findElement(By.xpath("//a[@class=\"color_pick selected\"]")).getAttribute("name"); 
+		return driver.findElement(itemColours).findElement(By.xpath(".//a[@class=\"color_pick selected\"]")).getAttribute("name"); 
 	}
 
 }

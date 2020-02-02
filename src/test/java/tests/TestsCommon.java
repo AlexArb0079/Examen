@@ -28,6 +28,7 @@ public class TestsCommon {
 		//Brave
 		options.setBinary("K:\\Programas\\BraveSoftware\\Brave-Browser\\Application\\Brave.exe");
 
+		//Bug in chrome driver
 		//options.addArguments("--start-maximized");
 		driver = new ChromeDriver(options);
 		

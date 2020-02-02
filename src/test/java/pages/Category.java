@@ -1,7 +1,5 @@
 package pages;
 
-import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -29,7 +27,7 @@ public class Category extends PagesCommon {
 
 	public void goToSubCategorie(String text) {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(subcategories));
-		driver.findElement(subcategories).findElement(By.xpath("//a[@class=\"subcategory-name\"][text()[contains(.,'" + text + "')]]")).click();
+		driver.findElement(subcategories).findElement(By.xpath(".//a[@class=\"subcategory-name\"][text()[contains(.,'" + text + "')]]")).click();
 	}
 	
 	public String getCurrentCategorie() {
@@ -50,10 +48,17 @@ public class Category extends PagesCommon {
 		
 	}
 	
-	public void sortResults(String condition, String order) {
+	public String sortResults(int index) {
+		wait.until(ExpectedConditions.presenceOfElementLocated(sortBy));
 		
-		new Select(driver.findElement(sortBy)).selectByValue(condition + ":" + order);
-		
+		String optionToSet = driver.findElement(sortBy).findElement(By.xpath("./option[" + index +  "]")).getAttribute("value");
+		new Select(driver.findElement(sortBy)).selectByIndex(index - 1);
+		return optionToSet;
+	}
+	
+	public String getCurrentOrder() {
+		wait.until(ExpectedConditions.presenceOfElementLocated(sortBy));
+		return driver.findElement(sortBy).findElement(By.xpath("./option[@selected=\"selected\"]")).getAttribute("value");
 	}
 	
 }

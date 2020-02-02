@@ -6,7 +6,7 @@
       <class name="tests.SeccionesTest">
         <methods>
           <include name="close"/>
-          <include name="dress"/>
+          <include name="yolo"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- tests.SeccionesTest -->

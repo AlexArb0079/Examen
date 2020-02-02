@@ -26,7 +26,7 @@ public class Search extends PagesCommon {
 	}
 	
 	public boolean itemFound(String text) {
-		return !driver.findElement(foundItems).findElements(By.xpath("//a[@title=\"" + text + "\"]")).isEmpty();
+		return !driver.findElement(foundItems).findElements(By.xpath(".//a[@title=\"" + text + "\"]")).isEmpty();
 	}
 
 }

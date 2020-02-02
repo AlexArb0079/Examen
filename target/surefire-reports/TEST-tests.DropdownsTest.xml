@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="14" failures="7" name="TestSuite" time="49.078" errors="0" skipped="0">
+<testsuite tests="8" failures="7" name="tests.DropdownsTest" time="6.525" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_112\jre\bin"/>
@@ -16,6 +16,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="test" value="DropdownsTest"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="K:\programming\Java\eclipse\ExamenFinal"/>
     <property name="java.runtime.version" value="1.8.0_112-b15"/>
@@ -47,7 +48,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_112\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=DropdownsTest test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="user.language.format" value="ja"/>
@@ -67,11 +68,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="tests.AutenticacionTest" name="AutenticationFailed" time="4.875"/>
-  <testcase classname="tests.BusquedaTest" name="busquedaExistente" time="7.26"/>
-  <testcase classname="tests.BusquedaTest" name="busquedaNoExistente" time="2.205"/>
-  <testcase classname="tests.DropdownsTest" name="option1" time="0.171"/>
-  <testcase classname="tests.DropdownsTest" name="option2" time="0.266">
+  <testcase classname="tests.DropdownsTest" name="option1" time="1.274"/>
+  <testcase classname="tests.DropdownsTest" name="option2" time="1.985">
     <failure message="expected [position:asc] but found [price:asc]" type="java.lang.AssertionError">java.lang.AssertionError: expected [position:asc] but found [price:asc]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
@@ -80,14 +78,14 @@
 	at org.testng.Assert.assertEquals(Assert.java:585)
 	at tests.DropdownsTest.option2(DropdownsTest.java:26)
 </failure>
-    <system-err>Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 12879
+    <system-err>Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 32029
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-2 02, 2020 7:24:33 午前 org.openqa.selenium.remote.ProtocolHandshake createSession
+2 02, 2020 7:15:02 午前 org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 </system-err>
   </testcase>
-  <testcase classname="tests.DropdownsTest" name="option3" time="0.263">
+  <testcase classname="tests.DropdownsTest" name="option3" time="1.824">
     <failure message="expected [position:asc] but found [price:desc]" type="java.lang.AssertionError">java.lang.AssertionError: expected [position:asc] but found [price:desc]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
@@ -96,14 +94,14 @@ INFO: Detected dialect: W3C
 	at org.testng.Assert.assertEquals(Assert.java:585)
 	at tests.DropdownsTest.option3(DropdownsTest.java:30)
 </failure>
-    <system-err>Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 25148
+    <system-err>Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 47390
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-2 02, 2020 7:24:55 午前 org.openqa.selenium.remote.ProtocolHandshake createSession
+2 02, 2020 7:15:20 午前 org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 </system-err>
   </testcase>
-  <testcase classname="tests.DropdownsTest" name="option4" time="1.845">
+  <testcase classname="tests.DropdownsTest" name="option4" time="0.279">
     <failure message="expected [position:asc] but found [name:asc]" type="java.lang.AssertionError">java.lang.AssertionError: expected [position:asc] but found [name:asc]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
@@ -112,14 +110,14 @@ INFO: Detected dialect: W3C
 	at org.testng.Assert.assertEquals(Assert.java:585)
 	at tests.DropdownsTest.option4(DropdownsTest.java:34)
 </failure>
-    <system-err>Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 25519
+    <system-err>Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 29471
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-2 02, 2020 7:25:15 午前 org.openqa.selenium.remote.ProtocolHandshake createSession
+2 02, 2020 7:15:33 午前 org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 </system-err>
   </testcase>
-  <testcase classname="tests.DropdownsTest" name="option5" time="1.333">
+  <testcase classname="tests.DropdownsTest" name="option5" time="0.283">
     <failure message="expected [position:asc] but found [name:desc]" type="java.lang.AssertionError">java.lang.AssertionError: expected [position:asc] but found [name:desc]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
@@ -128,14 +126,14 @@ INFO: Detected dialect: W3C
 	at org.testng.Assert.assertEquals(Assert.java:585)
 	at tests.DropdownsTest.option5(DropdownsTest.java:38)
 </failure>
-    <system-err>Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 40973
+    <system-err>Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 41317
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-2 02, 2020 7:25:31 午前 org.openqa.selenium.remote.ProtocolHandshake createSession
+2 02, 2020 7:15:53 午前 org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 </system-err>
   </testcase>
-  <testcase classname="tests.DropdownsTest" name="option6" time="1.932">
+  <testcase classname="tests.DropdownsTest" name="option6" time="0.286">
     <failure message="expected [position:asc] but found [quantity:desc]" type="java.lang.AssertionError">java.lang.AssertionError: expected [position:asc] but found [quantity:desc]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
@@ -144,14 +142,14 @@ INFO: Detected dialect: W3C
 	at org.testng.Assert.assertEquals(Assert.java:585)
 	at tests.DropdownsTest.option6(DropdownsTest.java:42)
 </failure>
-    <system-err>Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 25645
+    <system-err>Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 2553
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-2 02, 2020 7:25:44 午前 org.openqa.selenium.remote.ProtocolHandshake createSession
+2 02, 2020 7:16:15 午前 org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 </system-err>
   </testcase>
-  <testcase classname="tests.DropdownsTest" name="option7" time="0.289">
+  <testcase classname="tests.DropdownsTest" name="option7" time="0.294">
     <failure message="expected [position:asc] but found [reference:asc]" type="java.lang.AssertionError">java.lang.AssertionError: expected [position:asc] but found [reference:asc]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
@@ -160,14 +158,14 @@ INFO: Detected dialect: W3C
 	at org.testng.Assert.assertEquals(Assert.java:585)
 	at tests.DropdownsTest.option7(DropdownsTest.java:46)
 </failure>
-    <system-err>Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 8431
+    <system-err>Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 10256
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-2 02, 2020 7:25:59 午前 org.openqa.selenium.remote.ProtocolHandshake createSession
+2 02, 2020 7:16:39 午前 org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 </system-err>
   </testcase>
-  <testcase classname="tests.DropdownsTest" name="option8" time="0.309">
+  <testcase classname="tests.DropdownsTest" name="option8" time="0.3">
     <failure message="expected [position:asc] but found [reference:desc]" type="java.lang.AssertionError">java.lang.AssertionError: expected [position:asc] but found [reference:desc]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
@@ -176,14 +174,11 @@ INFO: Detected dialect: W3C
 	at org.testng.Assert.assertEquals(Assert.java:585)
 	at tests.DropdownsTest.option8(DropdownsTest.java:50)
 </failure>
-    <system-err>Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 47202
+    <system-err>Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 8082
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-2 02, 2020 7:26:19 午前 org.openqa.selenium.remote.ProtocolHandshake createSession
+2 02, 2020 7:16:59 午前 org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 </system-err>
   </testcase>
-  <testcase classname="tests.SeccionesTest" name="dress" time="11.255"/>
-  <testcase classname="tests.SeccionesTest" name="women" time="11.556"/>
-  <testcase classname="tests.SeccionesTest" name="yolo" time="5.519"/>
 </testsuite>
