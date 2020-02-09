@@ -6,14 +6,8 @@
       <class name="tests.DropdownsTest">
         <methods>
           <include name="option2"/>
-          <include name="option3"/>
-          <include name="option4"/>
-          <include name="option5"/>
           <include name="getReady"/>
           <include name="close"/>
-          <include name="option6"/>
-          <include name="option7"/>
-          <include name="option8"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- tests.DropdownsTest -->

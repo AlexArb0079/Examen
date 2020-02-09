@@ -7,7 +7,7 @@ import pages.Login;
 
 public class AutenticacionTest extends TestsCommon {
 	
-	@Test
+	@Test(description = "Autenticacion erronea")
 	public void AutenticationFailed() {
 		
 		pagesCommon.signIn();

@@ -7,7 +7,7 @@ import pages.Search;
 
 public class BusquedaTest extends TestsCommon {
 	
-	@Test
+	@Test(description = "Busqueda por un articulo existente")
 	public void busquedaExistente() {
 		
 		pagesCommon.search("Printed Dress");
@@ -20,7 +20,7 @@ public class BusquedaTest extends TestsCommon {
 		
 	}
 	
-	@Test
+	@Test(description = "Busqueda por un articulo inexistente")
 	public void busquedaNoExistente() {
 		
 		pagesCommon.search("Pants");

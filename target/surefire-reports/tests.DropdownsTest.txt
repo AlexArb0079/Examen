@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: tests.DropdownsTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 150.645 sec <<< FAILURE!
-option2(tests.DropdownsTest)  Time elapsed: 1.985 sec  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 26.952 sec <<< FAILURE!
+option2(tests.DropdownsTest)  Time elapsed: 0.296 sec  <<< FAILURE!
 java.lang.AssertionError: expected [position:asc] but found [price:asc]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
@@ -10,58 +10,4 @@ java.lang.AssertionError: expected [position:asc] but found [price:asc]
 	at org.testng.Assert.assertEquals(Assert.java:575)
 	at org.testng.Assert.assertEquals(Assert.java:585)
 	at tests.DropdownsTest.option2(DropdownsTest.java:26)
-
-option3(tests.DropdownsTest)  Time elapsed: 1.824 sec  <<< FAILURE!
-java.lang.AssertionError: expected [position:asc] but found [price:desc]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
-	at tests.DropdownsTest.option3(DropdownsTest.java:30)
-
-option4(tests.DropdownsTest)  Time elapsed: 0.279 sec  <<< FAILURE!
-java.lang.AssertionError: expected [position:asc] but found [name:asc]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
-	at tests.DropdownsTest.option4(DropdownsTest.java:34)
-
-option5(tests.DropdownsTest)  Time elapsed: 0.283 sec  <<< FAILURE!
-java.lang.AssertionError: expected [position:asc] but found [name:desc]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
-	at tests.DropdownsTest.option5(DropdownsTest.java:38)
-
-option6(tests.DropdownsTest)  Time elapsed: 0.286 sec  <<< FAILURE!
-java.lang.AssertionError: expected [position:asc] but found [quantity:desc]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
-	at tests.DropdownsTest.option6(DropdownsTest.java:42)
-
-option7(tests.DropdownsTest)  Time elapsed: 0.294 sec  <<< FAILURE!
-java.lang.AssertionError: expected [position:asc] but found [reference:asc]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
-	at tests.DropdownsTest.option7(DropdownsTest.java:46)
-
-option8(tests.DropdownsTest)  Time elapsed: 0.3 sec  <<< FAILURE!
-java.lang.AssertionError: expected [position:asc] but found [reference:desc]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
-	at tests.DropdownsTest.option8(DropdownsTest.java:50)
 

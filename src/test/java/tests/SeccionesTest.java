@@ -8,7 +8,7 @@ import pages.Product;
 
 public class SeccionesTest extends TestsCommon {
 	
-	@Test
+	@Test(description = "Test de secciones - Dress")
 	public void dress() {
 		pagesCommon.goToCategory("Dresses");
 		
@@ -27,7 +27,7 @@ public class SeccionesTest extends TestsCommon {
 		
 	}
 	
-	@Test
+	@Test(description = "Test de secciones - Women")
 	public void women() {
 		pagesCommon.goToCategory("Women");
 		
