@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-tests_DropdownsTest">
-              <span class="suite-name border-failed">tests.DropdownsTest</span>
+              <span class="suite-name border-passed">tests.DropdownsTest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-tests_DropdownsTest" class="hide-methods failed suite-tests_DropdownsTest"> (hide)</a> <!-- hide-methods failed suite-tests_DropdownsTest -->
-                      <a href="#" panel-name="suite-tests_DropdownsTest" class="show-methods failed suite-tests_DropdownsTest"> (show)</a> <!-- show-methods failed suite-tests_DropdownsTest -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-tests_DropdownsTest" class="hide-methods passed suite-tests_DropdownsTest"> (hide)</a> <!-- hide-methods passed suite-tests_DropdownsTest -->
+                      <a href="#" panel-name="suite-tests_DropdownsTest" class="show-methods passed suite-tests_DropdownsTest"> (show)</a> <!-- show-methods passed suite-tests_DropdownsTest -->
                     </span>
-                    <div class="method-list-content failed suite-tests_DropdownsTest">
+                    <div class="method-list-content passed suite-tests_DropdownsTest">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-tests_DropdownsTest" title="tests.DropdownsTest" hash-for-method="option2">option2</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tests_DropdownsTest" title="tests.DropdownsTest" hash-for-method="dobug">dobug</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-tests_DropdownsTest -->
+                    </div> <!-- method-list-content passed suite-tests_DropdownsTest -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,28 +117,21 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-tests_DropdownsTest" class="panel tests_DropdownsTest">
-          <div class="suite-tests_DropdownsTest-class-failed">
+          <div class="suite-tests_DropdownsTest-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">tests.DropdownsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="option2">
-                  </a> <!-- option2 -->
-                  <span class="method-name">option2</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [position:asc] but found [price:asc]
-	at tests.DropdownsTest.option2(DropdownsTest.java:26)
-	at java.util.ArrayList.forEach(ArrayList.java:1249)
-... Removed 41 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Test de Dropdowns - opcion Price Lowest first )                  </em>
+                  <a name="dobug">
+                  </a> <!-- dobug -->
+                  <span class="method-name">dobug</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-tests_DropdownsTest-class-failed -->
+          </div> <!-- suite-tests_DropdownsTest-class-passed -->
         </div> <!-- panel tests_DropdownsTest -->
         <div panel-name="test-xml-tests_DropdownsTest" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -197,14 +190,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'option2')
+data.setCell(0, 1, 'dobug')
 data.setCell(0, 2, 'tests.DropdownsTest')
-data.setCell(0, 3, 291);
+data.setCell(0, 3, 6559);
 window.suiteTableData['tests_DropdownsTest']= { tableData: data, tableDiv: 'times-div-tests_DropdownsTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 291 ms</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-tests_DropdownsTest">
               </div> <!-- times-div-tests_DropdownsTest -->
             </div> <!-- times-div -->
@@ -219,12 +212,14 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-tests_DropdownsTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">7 ignored methods</span>
+            <span class="header-content">8 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">tests.DropdownsTest</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">option2</span>
+                <br/>
                 <span class="ignored-method-name">option3</span>
                 <br/>
                 <span class="ignored-method-name">option4</span>
@@ -256,17 +251,15 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">getReady</span>
-                <span class="method-start">19408 ms</span>
+                <span class="method-start">18553 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">option2</span>
-                <span class="method-start">23825 ms</span>
+                <span class="method-name">dobug</span>
+                <span class="method-start">23112 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">close([TestResult name=option2 status=FAILURE method=DropdownsTest.option2()[pri:0, instance:tests.Dropdow...)</span>
-                <span class="method-start">24121 ms</span>
+                <span class="method-name">close([TestResult name=dobug status=SUCCESS method=DropdownsTest.dobug()[pri:0, instance:tests.DropdownsTe...)</span>
+                <span class="method-start">29674 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -50,15 +50,14 @@ public class Category extends PagesCommon {
 	
 	public String sortResults(int index) {
 		wait.until(ExpectedConditions.presenceOfElementLocated(sortBy));
-		
-		String optionToSet = driver.findElement(sortBy).findElement(By.xpath("./option[" + index +  "]")).getAttribute("value");
 		new Select(driver.findElement(sortBy)).selectByIndex(index - 1);
-		return optionToSet;
-	}
-	
-	public String getCurrentOrder() {
 		wait.until(ExpectedConditions.presenceOfElementLocated(sortBy));
 		return driver.findElement(sortBy).findElement(By.xpath("./option[@selected=\"selected\"]")).getAttribute("value");
+	}
+	
+	public String getExpectedOrder(int index) {
+		wait.until(ExpectedConditions.presenceOfElementLocated(sortBy));
+		return driver.findElement(sortBy).findElement(By.xpath("./option[" + index +  "]")).getAttribute("value");
 	}
 	
 }
